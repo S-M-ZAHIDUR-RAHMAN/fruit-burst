@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- font related link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- tailwind DaisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/928a809bf9.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'color-primary': '#F85559',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        .font-open {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-open">
+  <header class="container mx-auto">
+    <nav>
+      <div class="navbar rounded-full py-8 justify-around items-center bg-color-primary mt-12">
+          <div class="flex-1 lg:hidden">
+              <div class="dropdown">
+                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                  </label>
+                  <ul tabindex="0"
+                      class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="hidden lg:flex">
+              <ul class="flex justify-between gap-4 px-1 text-base text-white">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+          </div>
+          <div class="btn btn-ghost navbar-center normal-case text-xl lg:text-4xl">
+            <img src="images/logo.png" alt="">
+            <h3 class="text-white">Fruit Burst</h3>
+          </div>
+          <div class="input input-bordered rounded-full lg:w-100 md:w-auto">
+            <input type="text" placeholder="Search here" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+      </div>
+  </nav>
+
+  </header>
+  <main class="container mx-auto">
+
+  </main>
+  <footer>
+
+  </footer>
+
 </body>
+
 </html>
